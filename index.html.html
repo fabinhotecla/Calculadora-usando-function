@@ -1,0 +1,47 @@
+<html>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script>
+        function soma(n1, n2) {
+          return  n1 + n2
+
+        }
+        function subtracao(n1, n2) {
+            return n1 - n2
+        }
+        function multiplicacao(n1, n2) {
+            return n1 * n2
+        }
+        function divisao(n1, n2) {
+            return n1 / n2
+        }
+
+
+
+        var n1 = Number(prompt("Número 1"))
+        var op = prompt("operação")
+        var n2 = Number(prompt("Número2"))
+        
+
+        var resultado 
+
+        if (op == "+") {
+           resultado = soma(n1, n2)
+        } else if (op == "-") {
+            resultado = subtracao(n1, n2)
+        } else if(op == "*") {
+           resultado = multiplicacao(n1, n2)
+        } else if ( op == "/") {
+            resultado = divisao(n1, n2)
+        } else {
+            alert('não reconhecido essa transação')
+        }
+
+        alert( "Seu Resultado é " + resultado) 
+           
+
+
+        
+
+
+    </script>
+</html>
